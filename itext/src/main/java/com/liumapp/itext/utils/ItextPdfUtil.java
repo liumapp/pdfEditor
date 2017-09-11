@@ -8,7 +8,6 @@ import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Image;
@@ -25,8 +24,9 @@ import com.sun.image.codec.jpeg.JPEGEncodeParam;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
 import com.sun.pdfview.PDFFile;
 import com.sun.pdfview.PDFPage;
+import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class ItextPdfUtil {
     /**
      * 给pdf文档加电子签名(暂时只能加图片)
@@ -41,7 +41,7 @@ public class ItextPdfUtil {
      * @throws IOException
      * @throws DocumentException
      */
-     public  static boolean addCAToPdf(String southPath,String DepositPath,String imgPaht,float XPort,float YPort,
+     public   boolean addCAToPdf(String southPath,String DepositPath,String imgPaht,float XPort,float YPort,
                                        float CAWidth,float CAHeigth) {
          PdfStamper stamper = null;
          try {
@@ -97,7 +97,7 @@ public class ItextPdfUtil {
          return false;
      }
 
-     public static List<String> pdf2Img(String southPath,String saveDirPath) throws IOException {
+     public  List<String> pdf2Img(String southPath,String saveDirPath) throws IOException {
          List<String> pathList = new ArrayList<String>();
          // load a pdf from a byte buffer
          File file = new File(southPath);
@@ -159,12 +159,12 @@ public class ItextPdfUtil {
      }
 
     public static void main(String[] args) {
-           /* ItextPdfUtil.addCAToPdf("C:/word/test0.pdf","C:/word/test00.pdf","C:/word/sign.png",
+          /* ItextPdfUtil.addCAToPdf("C:/word/test0.pdf","C:/word/test00.pdf","C:/word/sign.png",
                     350f,0f,100f,150f);*/
-        try {
+      /*  try {
             ItextPdfUtil.pdf2Img("C:/word/test00.pdf","C:jpg");
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
