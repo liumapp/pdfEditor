@@ -8,9 +8,7 @@
 
     <artifactId>common</artifactId>
     <packaging>pom</packaging>
-
     <modules>
-      
-    </modules>
 
+    </modules>
 </project>

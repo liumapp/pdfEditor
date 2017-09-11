@@ -26,6 +26,7 @@ import com.sun.image.codec.jpeg.JPEGImageEncoder;
 import com.sun.pdfview.PDFFile;
 import com.sun.pdfview.PDFPage;
 
+//@Component
 public class ItextPdfUtil {
     /**
      * 给pdf文档加电子签名(暂时只能加图片)
