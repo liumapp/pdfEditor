@@ -58,10 +58,10 @@
             <version>1.49</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.sun.pdfview/pdfrenderer -->
-        <dependency>
+       <!-- <dependency>
             <groupId>com.sun.pdfview</groupId>
             <artifactId>pdfrenderer</artifactId>
-        </dependency>
+        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.swinglabs/pdf-renderer -->
         <dependency>
             <groupId>org.swinglabs</groupId>
