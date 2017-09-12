@@ -13,11 +13,11 @@
 	<url>http://maven.apache.org</url>
 
 	<modules>
-		<!--<module>frontend</module>-->
-		<!--<module>common</module>-->
+		<module>frontend</module>
+		<module>common</module>
 		<module>itext</module>
-		<!--<module>pdfbox</module>-->
-		<!--<module>api</module>-->
+		<module>pdfbox</module>
+		<module>api</module>
 	</modules>
 
 	<properties>
